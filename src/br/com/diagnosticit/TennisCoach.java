@@ -6,6 +6,8 @@
 package br.com.diagnosticit;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -20,8 +22,7 @@ public class TennisCoach implements Coach{
     public TennisCoach() {
         System.out.println("constructor TennisCoach");
     }   
-
-    @Autowired
+  
     public TennisCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
@@ -36,9 +37,11 @@ public class TennisCoach implements Coach{
         return fortuneService.getFortune();
     }
 
+    @Autowired
+    @Qualifier("happyFortuneService")
     public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
-        System.out.println("mÃ©todo setter TennisCoach");
+        System.out.println("método setter TennisCoach");
     }
     
     public void initTennisCoach(){

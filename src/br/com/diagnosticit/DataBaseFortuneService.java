@@ -9,18 +9,13 @@ import org.springframework.stereotype.Component;
 
 /**
  *
- * @author cristiano
+ * @author cristianoca
  */
 @Component
-public class HappyFortuneService implements FortuneService{
+public class DataBaseFortuneService implements FortuneService {
 
     @Override
     public String getFortune() {
-        return "Hoje é seu dia de sorte feliz";
+        return null;
     }
-
-
-    
-    
-    
 }

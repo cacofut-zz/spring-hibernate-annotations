@@ -1,4 +1,7 @@
 #
-#Tue Nov 27 13:27:56 BRST 2018
+#Mon Dec 03 19:17:40 BRST 2018
 br.com.diagnosticit.HappyFortuneService=org.springframework.stereotype.Component
+br.com.diagnosticit.RESTFortuneService=org.springframework.stereotype.Component
+br.com.diagnosticit.RandomFortuneService=org.springframework.stereotype.Component
 br.com.diagnosticit.TennisCoach=org.springframework.stereotype.Component
+br.com.diagnosticit.DataBaseFortuneService=org.springframework.stereotype.Component
